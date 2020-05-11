@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:mobx/mobx.dart';
 
-import '../appProperties.dart';
-import '../serv_store/counterServStore.dart';
+import '../config/appProperties.dart';
+import '../serv_store/servStore.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -13,7 +13,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   //instancia o service_store, dever ser feito em DI
-  final store = CounterServStore();
+  final store = ServStore();
 
   //Lista de reactions, que e coletada, para ao fechar a view,
   //ser disposada

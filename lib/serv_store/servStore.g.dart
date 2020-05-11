@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'counterServStore.dart';
+part of 'servStore.dart';
 
 // **************************************************************************
 // StoreGenerator
@@ -8,8 +8,8 @@ part of 'counterServStore.dart';
 
 // ignore_for_file: non_constant_identifier_names, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
-mixin _$CounterServStore on ICounterServRouter, Store {
-  final _$contObsvAtom = Atom(name: 'ICounterServRouter.contObsv');
+mixin _$ServStore on StoreInt, Store {
+  final _$contObsvAtom = Atom(name: 'StoreInt.contObsv');
 
   @override
   int get contObsv {
@@ -26,16 +26,15 @@ mixin _$CounterServStore on ICounterServRouter, Store {
     }, _$contObsvAtom, name: '${_$contObsvAtom.name}_set');
   }
 
-  final _$ICounterServRouterActionController =
-      ActionController(name: 'ICounterServRouter');
+  final _$StoreIntActionController = ActionController(name: 'StoreInt');
 
   @override
   void incAction() {
-    final _$actionInfo = _$ICounterServRouterActionController.startAction();
+    final _$actionInfo = _$StoreIntActionController.startAction();
     try {
       return super.incAction();
     } finally {
-      _$ICounterServRouterActionController.endAction(_$actionInfo);
+      _$StoreIntActionController.endAction(_$actionInfo);
     }
   }
 
